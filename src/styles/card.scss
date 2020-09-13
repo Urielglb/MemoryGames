@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    h1{
+        font-size: 4em;
+    }
+}
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    justify-content: space-around;
+    .card{
+        width: 350px;
+        height: 350px;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+        margin: 2%;
+        .theback{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 2%;
+            background-size: contain;
+            cursor: pointer;
+            border: 1px solid black;
+            h1{
+                font-size: 5em;
+            }
+        }
+        .thefront{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            img{
+                border-radius: 2%;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+}
+
+
+@media(max-width:575.98px){
+    .cards{
+        .card{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+@media (min-width:576px) and (max-width: 991.98px) {
+    .cards{
+        .card{
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
