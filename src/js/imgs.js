@@ -6,9 +6,6 @@ import fifth from '../assets/imgs/5.jpeg';
 import sixth from '../assets/imgs/6.jpeg';
 import seventh from '../assets/imgs/7.jpeg';
 import eighth from '../assets/imgs/8.jpeg';
-import nineth from '../assets/imgs/9.jpeg';
-import tenth from '../assets/imgs/10.jpeg';
-
 const imgs =[
     {
         "src" : first,
@@ -41,15 +38,7 @@ const imgs =[
     {
         "src" : eighth,
         "id": "eighth"
-    },
-    {
-        "src" : nineth,
-        "id": "nineth"
-    },
-    {
-        "src" : tenth,
-        "id": "tenth"
-    },
+    }
 ]
 
 export default imgs;
